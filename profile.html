@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+    <title>Mi perfil</title>
+</head>
+<body>
+      <!-- Start Up Btn  -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <!-- End Up Btn  -->
+    <!-- Start WhatsUp icon -->
+    <div class="whatsup position-fixed">
+      <a href="" target="_blank" class="text-white mx-auto "> 
+        <i class="fa-brands fa-whatsapp fs-2 main-color d-flex justify-content-center align-items-center"></i>
+      </a>
+    </div>
+    <!-- End WhatsUp icon -->
+  
+
+  <!-- Start Header -->
+  <div class="header" id="header">
+    <div class="top-header bg-body-tertiary pt-1">
+      <div class="container d-flex justify-content-between align-items-center  ">
+        <div class="call d-flex justify-content-between align-items-center gap-1">
+          <i class="fa-solid fa-phone fs-6"></i>
+          <p class="fs-5"><span class="fw-bold"> Teléfono:</span> +34 613307986</p>
+        </div>
+        <ul class="icons d-flex justify-content-start align-items-center gap-4 ms-3">
+          <li>
+            <a href="wishlist.html" class="position-relative">
+              <i class="fa-regular fa-heart fs-5" ></i>
+              <span class="wishlist-count count position-absolute text-white d-flex justify-content-center align-items-center">2</span>
+            </a>
+          </li>
+          <li>
+            <a href="cart.html" class="position-relative">
+              <i class="fa-solid fa-cart-shopping fs-5"></i>
+              <span class="cart-count count position-absolute text-white d-flex justify-content-center align-items-center">2</span>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html" id="profile">
+              <i class="fa-solid fa-user fs-5" ></i>
+            </a>
+          </li>
+          <li>
+            <a href="login.html" id="loginBtn">
+              <i class="fa-solid fa-right-from-bracket fs-5" ></i>
+            </a>
+          </li>
+      </ul>
+      </div>
+    </div>
+    <div class="bottom-header bg-white pb-2">
+      <div class="container ">
+        <nav class="navbar navbar-expand-lg bg-white">
+          <div class="container-fluid px-0">
+            <a class="navbar-brand main-color fw-bold fs-3 teko" href="index.html">La case de los regalos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item menu">
+                  <a class="link nav-link active" aria-current="page" href="index.html">Hogar</a>
+                </li>
+                <li class="nav-item dropdown menu">
+                  <a class="nav-link dropdown-toggle link"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categorías
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item link" href="perfume.html">Perfumes</a></li>
+                    <li><a class="dropdown-item link" href="cosmetica.html">Cosmética</a></li>
+                    <li><a class="dropdown-item link" href="regalos.html">Regalos</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item menu">
+                  <a class="link nav-link" href="products.html">  Productos</a>
+                </li>
+                <li class="nav-item menu">
+                  <a class="link nav-link" href="offers.html">Ofertas</a>
+                </li>
+                <li class="nav-item menu">
+                  <a class="link nav-link" href="contact.html">Contactenos</a>
+                </li>
+              </ul>
+              <form class="d-flex lab-search" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn searchBtn fs-6" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <form class="d-flex mobile-search d-none" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn searchBtn fs-6" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- End Header -->
+
+
+
+  <div class="profile my-3" id="profile">
+    <div class="container py-3 ">
+      <div class="top-profile d-flex justify-content-between gap-3 align-items-center">
+        <div class="img col-md-2">
+          <img src="imgs/data/user-profile.avif" class="w-100 h-100" alt="">
+        </div>
+        <div class="data-user flex-fill">
+          <h3 class="fs-4"><span class="fw-bold ">Señor:</span> <span>Mohamed Morad</span></h3>
+          <div class=" d-flex">
+            <p class="fs-6">
+              <span class="fw-bold">Correo electrónico:</span> 
+              <span>useruser@gmail.com</span> ,
+            </p>
+            <p class="fs-6">
+              <span class="fw-bold"> Teléfono:</span>
+              <span>+34 613307986.</span> 
+              
+              <span class="edit-pen">
+                <i class="fa-solid fa-pen main-color"></i>
+              </span>
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="section-address pb-3 border-bottom">
+        <div class="address-user d-flex mt-3 mb-2 gap-2">
+          <div class="address bg-body-secondary w-50 d-flex align-items-center gap-2 justify-content-center p-2 rounded mb-2">
+            <i class="fa-solid fa-location-dot main-color"></i>
+            <p class="fs-6">
+              calle ramón prada Vicente 1 bajo izda 33550 Cangas de Onis
+            </p>
+          </div>
+          <div class="address bg-body-secondary w-50 d-flex align-items-center gap-2 justify-content-center p-2 rounded mb-2">
+            <i class="fa-solid fa-location-dot main-color"></i>
+            <p class="fs-6">
+              calle ramón prada Vicente 1 bajo izda 33550 Cangas de Onis
+            </p>
+          </div>
+        </div>
+        <button class="btn bg-main-color text-white add-address">Agregar nueva dirección</button>
+      </div>
+      <div class="order py-3">
+        <h3>Su pedido</h3>
+        <div class="order-detail p-3 mb-3">
+          <div class="top-order d-flex justify-content-between gap-2 py-2">
+            <div class="left-side mb-2">
+              <h5 class="fs-5 p-0"><strong>Solicitar ID:</strong> <span>4564</span> <span class=" text-success">Enviada</span></h5>
+              <p class="fs-6"><strong>Fecha:</strong> <span>15 December 2024</span></p>
+            </div>
+            <div class="right-side">
+              <button class="btn  btn-danger mb-2">Cancelar orden</button>
+              <button class="btn bg-main-color text-white track-order mb-2">Orden de pista</button>
+            </div>
+          </div>
+          <div class="center-data row">
+            <div class="col-lg-4 col-md-6 py-2 left-box my-3">
+              <h6  class="main-color fs-4 p-0 mb-2">Contacto</h6>
+              <p class="fw-bold">Mohamed Morad</p>
+              <p><strong>Teléfono:</strong> +34 613307986 </p>
+              <p><strong>Correo electrónico:</strong> useruser@gmail.com</p>
+            </div>
+            <div class="col-lg-4 col-md-6  py-2 center-box my-3">
+              <h6 class="main-color fs-4 p-0 mb-2">Dirección de envío</h6>
+              <p>calle ramón prada Vicente 1 bajo izda 33550 Cangas de Onis</p>
+            </div>
+            <div class="col-lg-4 col-md-6 py-2 my-3">
+              <h6 class="main-color fs-4 p-0 mb-2">Pago</h6>
+              <p class="fw-bold text-success"> VISA **** 4216</p>
+              <p class="fw-bold">Gastos de envío: <span class=" fw-normal">20 &euro; </span></p>
+              <p class="fw-bold">Total pagado:  <span class=" fw-normal">250 &euro; </span></p>
+            </div>
+          </div>
+          <div class="btm-data row d-flex flex-column">
+            <div class="col-lg-4 col-md-6 py-2 mt-3 d-flex align-items-center gap-3">
+              <div class="img-pro w-25">
+                <img src="imgs/data/p3.jpg" class="w-100 h-100" alt="">
+              </div>
+              <div class="pro-data ">
+                <h4 class="fs-5 p-0">Name of Product</h4>
+                <div class="count-price fs-5 fw-bold">
+                  <span class="number">2x</span>
+                  =
+                  <span class="total">46 &euro; </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 py-2 mt-3 d-flex align-items-center gap-3">
+              <div class="img-pro w-25">
+                <img src="imgs/data/p4.jpg" class="w-100 h-100" alt="">
+              </div>
+              <div class="pro-data ">
+                <h4 class="fs-5 p-0">Name of Product</h4>
+                <div class="count-price fs-5 fw-bold">
+                  <span class="number">2x</span>
+                  =
+                  <span class="total">46 &euro; </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 py-2 mt-3 d-flex align-items-center gap-3">
+              <div class="img-pro w-25">
+                <img src="imgs/data/p15.jpg" class="w-100 h-100" alt="">
+              </div>
+              <div class="pro-data ">
+                <h4 class="fs-5 p-0">Name of Product</h4>
+                <div class="count-price fs-5 fw-bold">
+                  <span class="number">2x</span>
+                  =
+                  <span class="total">46 &euro; </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-detail p-3 mb-3">
+          <div class="top-order d-flex justify-content-between gap-2 py-2">
+            <div class="left-side mb-2">
+              <h5 class="fs-5 p-0 "><strong>Solicitar ID: </strong><span>4564</span> <span class=" text-danger">Pending</span></h5>
+              <p class="fs-6"><strong>Fecha:</strong> <span>15 December 2024</span></p>
+            </div>
+            <div class="right-side">
+              <button class="btn  btn-danger mb-2">Cancelar orden</button>
+              <button class="btn bg-main-color text-white track-order mb-2">Orden de pista</button>
+            </div>
+          </div>
+          <div class="center-data row">
+            <div class="col-lg-4 col-md-6 py-2 left-box my-3">
+              <h6  class="main-color fs-4 p-0 mb-2">Contacto</h6>
+              <p class="fw-bold">Mohamed Morad</p>
+              <p><strong>Teléfono:</strong> <span>+34 613307986</span> </p>
+              <p><strong>Correo electrónico:</strong> <span>useruser@gmail.com</span></p>
+            </div>
+            <div class="col-lg-4 col-md-6  py-2 center-box my-3">
+              <h6 class="main-color fs-4 p-0 mb-2">Dirección de envío</h6>
+              <p>calle ramón prada Vicente 1 bajo izda 33550 Cangas de Onis</p>
+            </div>
+            <div class="col-lg-4 col-md-6 py-2 my-3">
+              <h6 class="main-color fs-4 mb-2 p-0">Pago</h6>
+              <p class="fw-bold text-success"> VISA **** 4216</p>
+              <p class="fw-bold">Gastos de envío: <span class=" fw-normal">20 &euro; </span></p>
+              <p class="fw-bold">Total pagado:  <span class=" fw-normal">250 &euro; </span></p>
+            </div>
+          </div>
+          <div class="btm-data row d-flex flex-column">
+            <div class="col-lg-4 col-md-6 py-2 mt-3 d-flex align-items-center gap-3">
+              <div class="img-pro w-25">
+                <img src="imgs/data/p10.jpg" class="w-100 h-100" alt="">
+              </div>
+              <div class="pro-data ">
+                <h4 class="fs-5 p-0">Name of Product</h4>
+                <div class="count-price fs-5 fw-bold">
+                  <span class="number">2x</span>
+                  =
+                  <span class="total">46 &euro; </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 py-2 mt-3 d-flex align-items-center gap-3">
+              <div class="img-pro w-25">
+                <img src="imgs/data/p13.jpg" class="w-100 h-100" alt="">
+              </div>
+              <div class="pro-data ">
+                <h4 class="fs-5 p-0">Name of Product</h4>
+                <div class="count-price fs-5 fw-bold">
+                  <span class="number">2x</span>
+                  =
+                  <span class="total">46 &euro; </span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Start Footer -->
+  <div class="footer bg-main-color text-white">
+    <div class="container py-5 d-flex justify-content-between flex-wrap gap-2 border-bottom">
+      <ul class="icons d-flex justify-content-start  flex-column">
+        <li><h1 class="fs-4 my-1">Mi cuenta</h1></li>
+        <li>
+          <a href="register.html" class="text-white">
+            Inscribirse
+          </a>
+        </li>
+        <li>
+          <a href="wishlist.html" class="position-relative text-white">
+            Mi lista de deseos
+          </a>
+        </li>
+        <li>
+          <a href="cart.html" class="position-relative text-white">
+            Ver carrito
+          </a>
+        </li>
+        <li>
+          <a href="login.html" id="loginBtn" class="text-white">
+            Acceso
+          </a>
+        </li>
+        <li>
+          <a href="profile.html" id="loginBtn" class="text-white">
+            Mi perfil
+          </a>
+        </li>
+      </ul>
+      <ul class="icons d-flex justify-content-start  flex-column">
+        <li><h1 class=" fs-4 my-1">Enlaces útiles</h1></li>
+        <li> 
+          <a href="index.html" class="text-white">
+            Hogar
+          </a>
+        </li>
+        <li>
+          <a href="products.html" class="position-relative text-white">
+            Productos
+          </a>
+        </li>
+        <li>
+          <a href="offers.html" id="loginBtn" class="text-white">
+            Ofertas
+          </a>
+        </li>
+        <li>
+          <a href="contact.html" id="loginBtn" class="text-white">
+            Contactenos
+          </a>
+        </li>
+      </ul>
+      <ul class="social-icons">
+        <li>
+          <h1><a class="logo fw-bold fs-3 my-1 teko" href="index.html">La case de los regalos</a></h1>
+        </li>
+        <li><a href="https://www.facebook.com/profile.php?id=61558468224815" target="_blank" class="text-white me-3">
+          <i class="fa-brands fa-facebook fs-5"></i>
+        </a><a href="https://www.instagram.com/yeh2878?igsh=MWNpd2ptbm03a3F3Mw==" target="_blank" class="text-white me-3">
+          <i class="fa-brands fa-instagram fs-5"></i>
+        </a><a href="" target="_blank" class="text-white me-3"> 
+          <i class="fa-brands fa-whatsapp fs-5"></i>
+        </a><a href="http://tiktok.com/@elhabiibi" target="_blank" class="text-white">
+          <i class="fa-brands fa-tiktok fs-5"></i>
+        </a></li>
+        <li><p class="fs-5"><span class="fw-bold"> Teléfono:</span> +34 613307986</p>
+        </li>
+      </ul>
+    </div>
+    <div class="bottom-footer text-center py-3">
+      <div class="copyright fs-5">Copyright © 2024. Todos los derechos reservados.</div>
+    </div>
+  </div>
+  <!-- End Footer -->
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+    <title>Detalles de producto</title>
+
+</head>
+<body>
+    <div class="alert alert-success w-50 py-4 position-fixed"></div>
+
+    <!-- Start Up Btn  -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- End Up Btn  -->
+      <!-- Start WhatsUp icon -->
+  <div class="whatsup position-fixed">
+    <a href="" target="_blank" class="text-white mx-auto "> 
+      <i class="fa-brands fa-whatsapp fs-2 main-color d-flex justify-content-center align-items-center"></i>
+    </a>
+  </div>
+  <!-- End WhatsUp icon -->
+  
+
+
+  <!-- Start Header -->
+  <div class="header" id="header">
+    <div class="top-header bg-body-tertiary pt-1">
+      <div class="container d-flex justify-content-between align-items-center  ">
+        <div class="call d-flex justify-content-between align-items-center gap-1">
+          <i class="fa-solid fa-phone fs-6"></i>
+          <p class="fs-5"><span class="fw-bold"> Teléfono:</span> +34 613307986</p>
+        </div>
+        <ul class="icons d-flex justify-content-start align-items-center gap-4 ms-3">
+          <li>
+            <a href="wishlist.html" class="position-relative">
+              <i class="fa-regular fa-heart fs-5" ></i>
+              <span class="wishlist-count count position-absolute text-white d-flex justify-content-center align-items-center">2</span>
+            </a>
+          </li>
+          <li>
+            <a href="cart.html" class="position-relative">
+              <i class="fa-solid fa-cart-shopping fs-5"></i>
+              <span class="cart-count count position-absolute text-white d-flex justify-content-center align-items-center">2</span>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html" id="profile">
+              <i class="fa-solid fa-user fs-5" ></i>
+            </a>
+          </li>
+          <li>
+            <a href="login.html" id="loginBtn">
+              <i class="fa-solid fa-right-from-bracket fs-5" ></i>
+            </a>
+          </li>
+      </ul>
+      </div>
+    </div>
+    <div class="bottom-header bg-white pb-2">
+      <div class="container ">
+        <nav class="navbar navbar-expand-lg bg-white">
+          <div class="container-fluid px-0">
+            <a class="navbar-brand main-color fw-bold fs-3 teko" href="index.html">La case de los regalos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item menu">
+                  <a class="link nav-link active" aria-current="page" href="index.html">Hogar</a>
+                </li>
+                <li class="nav-item dropdown menu">
+                  <a class="nav-link dropdown-toggle link"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categorías
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item link" href="perfume.html">Perfumes</a></li>
+                    <li><a class="dropdown-item link" href="cosmetica.html">Cosmética</a></li>
+                    <li><a class="dropdown-item link" href="regalos.html">Regalos</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item menu">
+                  <a class="link nav-link" href="products.html">  Productos</a>
+                </li>
+                <li class="nav-item menu">
+                  <a class="link nav-link" href="offers.html">Ofertas</a>
+                </li>
+                <li class="nav-item menu">
+                  <a class="link nav-link" href="contact.html">Contactenos</a>
+                </li>
+              </ul>
+              <form class="d-flex lab-search" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn searchBtn fs-6" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <form class="d-flex mobile-search d-none" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn searchBtn fs-6" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- End Header -->
+
+    <!-- Start ProductDetails -->
+    <div class="proDetails">
+      <div class="container">
+        <div class="heading bg-main-color text-white p-3 my-4 fw-bold text-center d-flex justify-content-center align-items-center">
+          <h5 class="fs-2 fw-bold p-0 m-0"> 
+            Product Detail  
+          </h5>
+        </div>
+        <div class="row slider-img ">
+          <div class="col-md-4">
+            <div class="imgs">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="imgs/data/p10.jpg" class="w-100 h-100" alt=""></div>
+                  <div class="swiper-slide"><img src="imgs/data/p11.jpg" class="w-100 h-100" alt=""></div>
+                  <div class="swiper-slide"><img src="imgs/data/p12.jpg" class="w-100 h-100" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="details-product">
+              <h3 class="fs-3">Product Name</h3>
+              <span class="rating">
+                <i class="fa-solid fa-star rating-color"></i>
+                <i class="fa-solid fa-star rating-color"></i>
+                <i class="fa-solid fa-star rating-color"></i>
+                <i class="fa-solid fa-star-half-stroke rating-color"></i>
+                <i class="fa-regular fa-star rating-color"></i>
+              </span>
+              <div class="price fs-5"><span class="fw-bold">precio: </span><span>20</span> &euro;</div>
+              <p class="fs-5"><span class="fw-bold">Descripción: </span><span>Product Description . Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span> </p>
+              <p class="fs-6 fw-bold">Quedan <span id="ncount">5</span> unidades en stock</p>
+              <div class="btns my-2 d-flex gap-4">
+                  <a href="" class="btn bg-main-color d-flex justify-content-center align-item-center wishlist-i">
+                    <i class="fa-regular fa-heart fs-4 text-white pt-1 "  title="wishlist"></i>
+                  </a>
+                  <a href="" class="btn main-color p-2 add-to-cart">
+                    <i class="fa-solid fa-cart-shopping  main-color fs-4 me-2"  title="cart"></i><span>Añadir a la cesta</span>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="extra-product bg-body-secondary mt-5">
+        <div class="container py-5">
+
+          <div class="products featured-product">
+            <div class="container mb-5">
+              <div class="heading bg-main-color text-white p-3 my-4 fw-bold text-center d-flex justify-content-center align-items-center">
+                <h5 class="fs-2 fw-bold p-0 m-0"> 
+                  También te puede interesar
+                </h5>
+              </div>
+              <div class="row" id="my_products">
+                <div class="col-md-3 col-sm-6 my-2">
+                  <div class="product cursor-pointer py-3 px-2">
+                    <a href="productDetails.html">
+                      <div class="img">
+                        <img src='imgs/data/p3.jpg' class="w-100 h-100" alt="">
+                      </div>
+                      <span class="main-color font-sm fs-5 fw-bolder">
+                        Product Name
+                      </span>
+                      <h3 class="fs-6 p-0">description of product</h3>
+                      <div class="d-flex justify-content-between my-3">
+                        <span class="fw-bold">	20	&euro;</span>
+                        <span>
+                          <i class="fa-solid fa-star rating-color"></i>
+                          <i class="fa-solid fa-star rating-color"></i>
+                          <i class="fa-solid fa-star rating-color"></i>
+                          <i class="fa-solid fa-star-half-stroke rating-color"></i>
+                          <i class="fa-regular fa-star rating-color"></i>
+                        </span>
+                      </div>
+                    </a>
+                    <div class="btns d-flex gap-1 ">
+                      <button class="btn wishlistBtn text-white"><i class="fa-regular fa-heart fs-6"></i></button>
+                      <button
+                        class="btn add-btn text-white flex-fill"
+                      >
+                      <i class="fa-solid fa-cart-shopping fs-5 me-2"></i><span>Añadir a la cesta</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 my-2">
+                  <div class="product cursor-pointer py-3 px-2">
+                    <a href="productDetails.html">
+                      <div class="img">
+                        <img src='imgs/data/p3.jpg' class="w-100 h-100" alt="">
+                      </div>
+                      <span class="main-color font-sm fs-5 fw-bolder">
+                        Product Name
+                      </span>
+                      <h3 class="fs-6 p-0">description of product</h3>
+                      <div class="d-flex justify-content-between my-3">
+                        <span class="fw-bold">	20	&euro;</span>
+                        <span>
+                          <i class="fa-solid fa-star rating-color"></i>
+                          <i class="fa-solid fa-star rating-color"></i>
+                          <i class="fa-solid fa-star rating-color"></i>
+                          <i class="fa-solid fa-star-half-stroke rating-color"></i>
+                          <i class="fa-regular fa-star rating-color"></i>
+                        </span>
+                      </div>
+                    </a>
+                    <div class="btns d-flex gap-1 ">
+                      <button class="btn wishlistBtn text-white"><i class="fa-regular fa-heart fs-6"></i></button>
+                      <button
+                        class="btn add-btn text-white flex-fill"
+                      >
+                      <i class="fa-solid fa-cart-shopping fs-5 me-2"></i><span>Añadir a la cesta</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 my-2">
+                  <div class="product cursor-pointer py-3 px-2">
+                    <a href="productDetails.html">
+                      <div class="img">
+                        <img src='imgs/data/p3.jpg' class="w-100 h-100" alt="">
+                      </div>
+                      <span class="main-color font-sm fs-5 fw-bolder">
+                        Product Name
+                      </span>
+                      <h3 class="fs-6 p-0">description of product</h3>
+                      <div class="d-flex justify-content-between my-3">
+                        <span class="fw-bold">	20	&euro;</span>
+                        <span>
+                          <i class="fa-solid fa-star rating-color"></i>
+                          <i class="fa-solid fa-star rating-color"></i>
+                          <i class="fa-solid fa-star rating-color"></i>
+                          <i class="fa-solid fa-star-half-stroke rating-color"></i>
+                          <i class="fa-regular fa-star rating-color"></i>
+                        </span>
+                      </div>
+                    </a>
+                    <div class="btns d-flex gap-1 ">
+                      <button class="btn wishlistBtn text-white"><i class="fa-regular fa-heart fs-6"></i></button>
+                      <button
+                        class="btn add-btn text-white flex-fill"
+                      >
+                      <i class="fa-solid fa-cart-shopping fs-5 me-2"></i><span>Añadir a la cesta</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 my-2">
+                  <div class="product cursor-pointer py-3 px-2">
+                    <a href="productDetails.html">
+                      <div class="img">
+                        <img src='imgs/data/p3.jpg' class="w-100 h-100" alt="">
+                      </div>
+                      <span class="main-color font-sm fs-5 fw-bolder">
+                        Product Name
+                      </span>
+                      <h3 class="fs-6 p-0">description of product</h3>
+                      <div class="d-flex justify-content-between my-3">
+                        <span class="fw-bold">	20	&euro;</span>
+                        <span>
+                          <i class="fa-solid fa-star rating-color"></i>
+                          <i class="fa-solid fa-star rating-color"></i>
+                          <i class="fa-solid fa-star rating-color"></i>
+                          <i class="fa-solid fa-star-half-stroke rating-color"></i>
+                          <i class="fa-regular fa-star rating-color"></i>
+                        </span>
+                      </div>
+                    </a>
+                    <div class="btns d-flex gap-1 ">
+                      <button class="btn wishlistBtn text-white"><i class="fa-regular fa-heart fs-6"></i></button>
+                      <button
+                        class="btn add-btn text-white flex-fill"
+                      >
+                      <i class="fa-solid fa-cart-shopping fs-5 me-2"></i><span>Añadir a la cesta</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 my-2">
+                  <div class="product cursor-pointer py-3 px-2">
+                    <a href="productDetails.html">
+                      <div class="img">
+                        <img src='imgs/data/p3.jpg' class="w-100 h-100" alt="">
+                      </div>
+                      <span class="main-color font-sm fs-5 fw-bolder">
+                        Product Name
+                      </span>
+                      <h3 class="fs-6 p-0">description of product</h3>
+                      <div class="d-flex justify-content-between my-3">
+                        <span class="fw-bold">	20	&euro;</span>
+                        <span>
+                          <i class="fa-solid fa-star rating-color"></i>
+                          <i class="fa-solid fa-star rating-color"></i>
+                          <i class="fa-solid fa-star rating-color"></i>
+                          <i class="fa-solid fa-star-half-stroke rating-color"></i>
+                          <i class="fa-regular fa-star rating-color"></i>
+                        </span>
+                      </div>
+                    </a>
+                    <div class="btns d-flex gap-1 ">
+                      <button class="btn wishlistBtn text-white"><i class="fa-regular fa-heart fs-6"></i></button>
+                      <button
+                        class="btn add-btn text-white flex-fill"
+                      >
+                      <i class="fa-solid fa-cart-shopping fs-5 me-2"></i><span>Añadir a la cesta</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 my-2">
+                  <div class="product cursor-pointer py-3 px-2">
+                    <a href="productDetails.html">
+                      <div class="img">
+                        <img src='imgs/data/p3.jpg' class="w-100 h-100" alt="">
+                      </div>
+                      <span class="main-color font-sm fs-5 fw-bolder">
+                        Product Name
+                      </span>
+                      <h3 class="fs-6 p-0">description of product</h3>
+                      <div class="d-flex justify-content-between my-3">
+                        <span class="fw-bold">	20	&euro;</span>
+                        <span>
+                          <i class="fa-solid fa-star rating-color"></i>
+                          <i class="fa-solid fa-star rating-color"></i>
+                          <i class="fa-solid fa-star rating-color"></i>
+                          <i class="fa-solid fa-star-half-stroke rating-color"></i>
+                          <i class="fa-regular fa-star rating-color"></i>
+                        </span>
+                      </div>
+                    </a>
+                    <div class="btns d-flex gap-1 ">
+                      <button class="btn wishlistBtn text-white"><i class="fa-regular fa-heart fs-6"></i></button>
+                      <button
+                        class="btn add-btn text-white flex-fill"
+                      >
+                      <i class="fa-solid fa-cart-shopping fs-5 me-2"></i><span>Añadir a la cesta</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="pagination justify-content-center mt-3 align-items-center">
+                <li class="page-item disabled">
+                    <a class="page-link page-link-prev" href="#" aria-label="Previous" tabindex="-1" aria-disabled="true">
+                        <span aria-hidden="true"><i class="icon-long-arrow-left"></i></span>Anterior
+                    </a>
+                </li>
+                <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link page-link-next" href="#" aria-label="Next">
+                      Próxima <span aria-hidden="true"><i class="icon-long-arrow-right"></i></span>
+                    </a>
+                </li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End ProductDetails -->
+
+
+
+  <!-- Start Footer -->
+  <div class="footer bg-main-color text-white">
+    <div class="container py-5 d-flex justify-content-between flex-wrap gap-2 border-bottom">
+      <ul class="icons d-flex justify-content-start  flex-column">
+        <li><h1 class="fs-4 my-1">Mi cuenta</h1></li>
+        <li>
+          <a href="register.html" class="text-white">
+            Inscribirse
+          </a>
+        </li>
+        <li>
+          <a href="wishlist.html" class="position-relative text-white">
+            Mi lista de deseos
+          </a>
+        </li>
+        <li>
+          <a href="cart.html" class="position-relative text-white">
+            Ver carrito
+          </a>
+        </li>
+        <li>
+          <a href="login.html" id="loginBtn" class="text-white">
+            Acceso
+          </a>
+        </li>
+        <li>
+          <a href="profile.html" id="loginBtn" class="text-white">
+            Mi perfil
+          </a>
+        </li>
+      </ul>
+      <ul class="icons d-flex justify-content-start  flex-column">
+        <li><h1 class=" fs-4 my-1">Enlaces útiles</h1></li>
+        <li> 
+          <a href="index.html" class="text-white">
+            Hogar
+          </a>
+        </li>
+        <li>
+          <a href="products.html" class="position-relative text-white">
+            Productos
+          </a>
+        </li>
+        <li>
+          <a href="offers.html" id="loginBtn" class="text-white">
+            Ofertas
+          </a>
+        </li>
+        <li>
+          <a href="contact.html" id="loginBtn" class="text-white">
+            Contactenos
+          </a>
+        </li>
+      </ul>
+      <ul class="social-icons">
+        <li>
+          <h1><a class="logo fw-bold fs-3 my-1 teko" href="index.html">La case de los regalos</a></h1>
+        </li>
+        <li><a href="https://www.facebook.com/profile.php?id=61558468224815" target="_blank" class="text-white me-3">
+          <i class="fa-brands fa-facebook fs-5"></i>
+        </a><a href="https://www.instagram.com/yeh2878?igsh=MWNpd2ptbm03a3F3Mw==" target="_blank" class="text-white me-3">
+          <i class="fa-brands fa-instagram fs-5"></i>
+        </a><a href="" target="_blank" class="text-white me-3"> 
+          <i class="fa-brands fa-whatsapp fs-5"></i>
+        </a><a href="http://tiktok.com/@elhabiibi" target="_blank" class="text-white">
+          <i class="fa-brands fa-tiktok fs-5"></i>
+        </a></li>
+        <li><p class="fs-5"><span class="fw-bold"> Teléfono:</span> +34 613307986</p>
+        </li>
+      </ul>
+    </div>
+    <div class="bottom-footer text-center py-3">
+      <div class="copyright fs-5">Copyright © 2024. Todos los derechos reservados.</div>
+    </div>
+  </div>
+  <!-- End Footer -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

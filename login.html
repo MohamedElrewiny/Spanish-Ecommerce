@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <title>Acceso</title>
+</head>
+<body>
+  <!-- Start Login -->
+  <section id="login" class=" login d-flex flex-column justify-content-between">
+    <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(51, 58, 115, 1)" offset="0%"></stop><stop stop-color="rgba(56, 122, 223, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,90L1440,0L2880,80L4320,10L5760,10L7200,50L8640,0L10080,50L11520,80L12960,10L14400,0L15840,10L17280,90L18720,60L20160,20L21600,90L23040,30L24480,90L25920,60L27360,10L28800,60L30240,60L31680,70L33120,60L34560,0L34560,100L33120,100L31680,100L30240,100L28800,100L27360,100L25920,100L24480,100L23040,100L21600,100L20160,100L18720,100L17280,100L15840,100L14400,100L12960,100L11520,100L10080,100L8640,100L7200,100L5760,100L4320,100L2880,100L1440,100L0,100Z"></path></svg>
+    <div class="container position-absolute">
+      <div class="login-content bg-main-color text-center w-50 m-auto p-5 position-relative z-3">
+          <div class="header">
+              <h1 class="text-white">Acceso</h1>
+          </div>
+          <div class="content mt-3">
+              <input type="email" id="emailLoginInput"  class="form-control text-white mb-3 bg-transparent" placeholder="Tu correo electrónico" >
+              <input type="password" id="passwordLoginInput" class="form-control text-white mb-3 bg-transparent" placeholder="Tu contraseña" >
+              <p id="alertMassage" class="d-none"></p>
+          </div>
+          <div class="submit-btn ">
+              <a id="loginBtn" class="btn w-100">Acceso</a>
+          </div>
+          <div class="account-question mt-3 text-white flex-wrap d-flex justify-content-between gap-3">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="signin-remember">
+              <label class="custom-control-label" for="signin-remember">Acuérdate de mí</label>
+            </div>  
+            <a href="#" class="flex-fill justify-content-start d-flex ps-3 border-start forgetpass">Olvidaste tu contraseña?</a>
+            <p >No tienes una cuenta? <a href="register.html"  onclick="store()" class="text-white toregister text-decoration-underline">Regístrate ahora</a></p>
+          </div>
+      </div>
+    </div>
+    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(51, 58, 115, 1)" offset="0%"></stop><stop stop-color="rgba(56, 122, 223, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,90L1440,0L2880,80L4320,10L5760,10L7200,50L8640,0L10080,50L11520,80L12960,10L14400,0L15840,10L17280,90L18720,60L20160,20L21600,90L23040,30L24480,90L25920,60L27360,10L28800,60L30240,60L31680,70L33120,60L34560,0L34560,100L33120,100L31680,100L30240,100L28800,100L27360,100L25920,100L24480,100L23040,100L21600,100L20160,100L18720,100L17280,100L15840,100L14400,100L12960,100L11520,100L10080,100L8640,100L7200,100L5760,100L4320,100L2880,100L1440,100L0,100Z"></path></svg>   
+  </section>
+  
+  <!-- End Login -->
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

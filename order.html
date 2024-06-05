@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <title>Pago</title>
+</head>
+<body>
+  <div class="alert alert-success w-50 py-4 position-fixed"></div>
+
+  <!-- Start Up Btn  -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <!-- End Up Btn  -->
+    <!-- Start WhatsUp icon -->
+    <div class="whatsup position-fixed">
+      <a href="" target="_blank" class="text-white mx-auto "> 
+        <i class="fa-brands fa-whatsapp fs-2 main-color d-flex justify-content-center align-items-center"></i>
+      </a>
+    </div>
+    <!-- End WhatsUp icon -->
+
+
+
+  <!-- Start Header -->
+  <div class="header" id="header">
+    <div class="top-header bg-body-tertiary pt-1">
+      <div class="container d-flex justify-content-between align-items-center  ">
+        <div class="call d-flex justify-content-between align-items-center gap-1">
+          <i class="fa-solid fa-phone fs-6"></i>
+          <p class="fs-5"><span class="fw-bold"> Teléfono:</span> +34 613307986</p>
+        </div>
+        <ul class="icons d-flex justify-content-start align-items-center gap-4 ms-3">
+          <li>
+            <a href="wishlist.html" class="position-relative">
+              <i class="fa-regular fa-heart fs-5" ></i>
+              <span class="wishlist-count count position-absolute text-white d-flex justify-content-center align-items-center">2</span>
+            </a>
+          </li>
+          <li>
+            <a href="cart.html" class="position-relative">
+              <i class="fa-solid fa-cart-shopping fs-5"></i>
+              <span class="cart-count count position-absolute text-white d-flex justify-content-center align-items-center">2</span>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html" id="profile">
+              <i class="fa-solid fa-user fs-5" ></i>
+            </a>
+          </li>
+          <li>
+            <a href="login.html" id="loginBtn">
+              <i class="fa-solid fa-right-from-bracket fs-5" ></i>
+            </a>
+          </li>
+      </ul>
+      </div>
+    </div>
+    <div class="bottom-header bg-white pb-2">
+      <div class="container ">
+        <nav class="navbar navbar-expand-lg bg-white">
+          <div class="container-fluid px-0">
+            <a class="navbar-brand main-color fw-bold fs-3 teko" href="index.html">La case de los regalos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item menu">
+                  <a class="link nav-link active" aria-current="page" href="index.html">Hogar</a>
+                </li>
+                <li class="nav-item dropdown menu">
+                  <a class="nav-link dropdown-toggle link"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categorías
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item link" href="perfume.html">Perfumes</a></li>
+                    <li><a class="dropdown-item link" href="cosmetica.html">Cosmética</a></li>
+                    <li><a class="dropdown-item link" href="regalos.html">Regalos</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item menu">
+                  <a class="link nav-link" href="products.html">  Productos</a>
+                </li>
+                <li class="nav-item menu">
+                  <a class="link nav-link" href="offers.html">Ofertas</a>
+                </li>
+                <li class="nav-item menu">
+                  <a class="link nav-link" href="contact.html">Contactenos</a>
+                </li>
+              </ul>
+              <form class="d-flex lab-search" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn searchBtn fs-6" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <form class="d-flex mobile-search d-none" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn searchBtn fs-6" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- End Header -->
+
+
+  <!-- Start Order -->
+  <div class="order mb-3">
+    <div class="container">
+      <div class="heading bg-main-color text-white p-3 my-4 fw-bold text-center d-flex justify-content-center align-items-center">
+        <h5 class="fs-2 fw-bold p-0 m-0"> 
+          Registra tus datos
+        </h5>
+      </div>
+<div class="content d-flex justify-content-between gap-5">
+  <form action="">
+    <label for="name" class="fs-5 ">Nombre</label>
+    <input type="text" id="name" class=" form-control border-2 mb-2">
+    <label for="nickname" class="fs-5 ">Apellidos</label>
+    <input type="text" id="nickname" class=" form-control border-2 mb-2">
+    <label for="address" class="fs-5 ">Dirección</label>
+    <input type="text" id="optionname" class=" form-control border-2 mb-2">
+    <label for="detailaddress" class="fs-5 ">Dirección Complementaria</label>
+    <input type="text" id="detailaddress" class=" form-control border-2 mb-2">
+    <label for="codepostal" class="fs-5 ">Codigo Postal/Zip</label>
+    <input type="number" id="codepostal" class=" form-control border-2 mb-2">
+    <label for="city" class="fs-5 ">Ciudad</label>
+    <input type="text" id="city" class=" form-control border-2 mb-2">
+    <label for="provincia">Provincia</label>
+    <select name="provincia" id="provincia" class="form-control mb-2">
+      <option value="seleccionar">seleccionar ...</option>
+      <option value="Álava">Álava</option>
+      <option value="Albacete">Albacete </option>
+      <option value="Alicante">Alicante </option>
+      <option value="Almería">Almería </option>
+      <option value="Asturias">Asturias </option>
+      <option value="Ávila ">Ávila </option>
+      <option value="Badajoz ">Badajoz  </option>
+      <option value="Barcelona ">Barcelona  </option>
+      <option value="Burgos ">Burgos  </option>
+      <option value="Cáceres ">Cáceres </option>
+      <option value="Cádiz ">Cádiz </option>
+      <option value="Cantabria ">Cantabria  </option>
+      <option value="Castellón ">Castellón  </option>
+      <option value="Ciudad Real ">Ciudad Real  </option>
+      <option value="seleccionar">seleccionar</option>
+      <option value="Córdoba ">Córdoba </option>
+      <option value="Cuenca ">Cuenca  </option>
+      <option value="Gerona ">Gerona  </option>
+      <option value="Granada ">Granada  </option>
+      <option value="Guadalajara ">Guadalajara </option>
+      <option value="Guipúzcoa ">Guipúzcoa </option>
+      <option value="Huelva ">Huelva  </option>
+      <option value="Huesca ">Huesca  </option>
+      <option value="Islas Baleares">Islas Baleares </option>
+      <option value="Jaén ">Jaén </option>
+      <option value="La Coruña">La Coruña</option>
+      <option value="La Rioja ">La Rioja  </option>
+      <option value="Las Palmas">Las Palmas </option>
+      <option value="León ">León  </option>
+      <option value="Lérida ">Lérida </option>
+      <option value="Lugo ">Álava</option>
+      <option value="saab">Lugo  </option>
+      <option value="Madrid ">Madrid  </option>
+      <option value="Málaga ">Málaga  </option>
+      <option value="Navarra ">Navarra </option>
+      <option value="Orense ">Orense </option>
+      <option value="Palencia ">Palencia  </option>
+      <option value="Pontevedra ">Pontevedra  </option>
+      <option value="Salamanca ">Salamanca  </option>
+      <option value="Santa Cruz de Tenerife">Santa Cruz de Tenerife</option>
+      <option value="Segovia ">Segovia </option>
+      <option value="Sevilla ">Sevilla  </option>
+      <option value="Soria ">Soria  </option>
+      <option value="Tarragona ">Tarragona  </option>
+      <option value="Teruel ">Teruel </option>
+      <option value="Toledo ">Toledo </option>
+      <option value="Valencia ">Valencia  </option>
+      <option value="Valladolid ">Valladolid  </option>
+      <option value="Vizcaya ">Vizcaya  </option>
+      <option value="Zamora ">Zamora </option>
+      <option value="Zaragoza ">Zaragoza </option>
+    </select>
+    <label for="phone" class="fs-5 ">Telefono</label>
+    <input type="tel" id="phone" class=" form-control border-2 mb-2">
+    <button class="btn text-white w-100 my-2">Enviar</button>
+  </form>
+
+  <div class="receipt ">
+    <h3 class="receipt-title main-color fw-bold">Su pedido</h3>
+    <table class="table table-receipt bg-body-tertiary fs-5">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>product name</td>
+          <td>&euro; 20</td>
+        </tr>
+        <tr>
+          <td>product name</td>
+          <td>&euro; 25</td>
+        </tr>
+        <tr>
+          <td class="fw-bold">Total parcial:</td>
+          <td class="fw-bold">&euro; 45</td>
+        </tr>
+        <tr>
+          <td class="fw-bold">Envío:</td>
+          <td class="fw-bold">&euro; 5</td>
+        </tr>
+        <tr>
+          <td class="fw-bold main-color">Total:</td>
+          <td class="fw-bold main-color">&euro; 50</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Start Payment -->
+    <div class="payment mb-2 ">
+        <div class="card text-start p-2">
+          <h5 class=" main-color">Método de pago</h5>
+          <div>
+            <input type="radio" name="payment" id="cash" class="mb-3" value="Cash on delivery">
+            <label for="cash">Contra reembolso</label>
+          </div>
+
+          <div>
+            <input type="radio" name="payment" id="credit" value="Credit Card ">
+            <label for="credit" class="mb-1">Tarjeta de crédito </label>
+            <div class="data-card">
+              <form action="" class="p-2 w-100 border-secondary">
+                <label for="ccn">Número de Tarjeta de Crédito </label><br>
+                <input id="ccn" type="number" name="ccn" maxlength="16" class="w-100 form-control" placeholder="xxxx xxxx xxxx xxxx" required>
+                
+                <div class="d-flex justify-content-between gap-3 my-2">
+                  <div class="w-50 ">
+                    <label for="Expiration">Fecha de caducidad</label><br>
+                    <input type="number" placeholder="MM/YY" name="Expiration" class="w-100 form-control" id="Expiration" required>
+                  </div>
+                  <div class="w-50">
+                    <label for="csc">Código de seguridad </label><br>
+                    <input type="number" placeholder="CSC" name="csc" class="w-100 form-control" id="csc" required>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- End Payment -->
+
+    <button class="btn btn-checkout w-100 fs-5">Completa tu compra</button>
+  </div>
+
+</div>
+      
+    </div>
+  </div>
+  <!-- End Order -->
+
+
+  <!-- Start Footer -->
+  <div class="footer bg-main-color text-white">
+    <div class="container py-5 d-flex justify-content-between flex-wrap gap-2 border-bottom">
+      <ul class="icons d-flex justify-content-start  flex-column">
+        <li><h1 class="fs-4 my-1">Mi cuenta</h1></li>
+        <li>
+          <a href="register.html" class="text-white">
+            Inscribirse
+          </a>
+        </li>
+        <li>
+          <a href="wishlist.html" class="position-relative text-white">
+            Mi lista de deseos
+          </a>
+        </li>
+        <li>
+          <a href="cart.html" class="position-relative text-white">
+            Ver carrito
+          </a>
+        </li>
+        <li>
+          <a href="login.html" id="loginBtn" class="text-white">
+            Acceso
+          </a>
+        </li>
+        <li>
+          <a href="profile.html" id="loginBtn" class="text-white">
+            Mi perfil
+          </a>
+        </li>
+      </ul>
+      <ul class="icons d-flex justify-content-start  flex-column">
+        <li><h1 class=" fs-4 my-1">Enlaces útiles</h1></li>
+        <li> 
+          <a href="index.html" class="text-white">
+            Hogar
+          </a>
+        </li>
+        <li>
+          <a href="products.html" class="position-relative text-white">
+            Productos
+          </a>
+        </li>
+        <li>
+          <a href="offers.html" id="loginBtn" class="text-white">
+            Ofertas
+          </a>
+        </li>
+        <li>
+          <a href="contact.html" id="loginBtn" class="text-white">
+            Contactenos
+          </a>
+        </li>
+      </ul>
+      <ul class="social-icons">
+        <li>
+          <h1><a class="logo fw-bold fs-3 my-1 teko" href="index.html">La case de los regalos</a></h1>
+        </li>
+        <li><a href="https://www.facebook.com/profile.php?id=61558468224815" target="_blank" class="text-white me-3">
+          <i class="fa-brands fa-facebook fs-5"></i>
+        </a><a href="https://www.instagram.com/yeh2878?igsh=MWNpd2ptbm03a3F3Mw==" target="_blank" class="text-white me-3">
+          <i class="fa-brands fa-instagram fs-5"></i>
+        </a><a href="" target="_blank" class="text-white me-3"> 
+          <i class="fa-brands fa-whatsapp fs-5"></i>
+        </a><a href="http://tiktok.com/@elhabiibi" target="_blank" class="text-white">
+          <i class="fa-brands fa-tiktok fs-5"></i>
+        </a></li>
+        <li><p class="fs-5"><span class="fw-bold"> Teléfono:</span> +34 613307986</p>
+        </li>
+      </ul>
+    </div>
+    <div class="bottom-footer text-center py-3">
+      <div class="copyright fs-5">Copyright © 2024. Todos los derechos reservados.</div>
+    </div>
+  </div>
+  <!-- End Footer -->
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
